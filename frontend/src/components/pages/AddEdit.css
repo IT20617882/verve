@@ -1,0 +1,28 @@
+
+.container1{
+  width: 75%;
+  padding: 10px 0px;
+  margin: 20px 0;
+  box-sizing: border-box;
+ 
+  
+}
+
+
+.btn{
+
+    width:100;
+    background-color: #ab4e52;
+    padding:14px 20px;
+    margin:8px 0;
+    border:5px;;
+    border-radius:4px;
+    cursor: pointer;
+
+
+}
+
+.btn:hover{
+    background-color:#C45AEC;
+    
+}
