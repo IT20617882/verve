@@ -1,4 +1,4 @@
-//if router doesnt find
+//if routes doesnt find
 //errors occured 
 
 const notFound = (req, res, next) => {

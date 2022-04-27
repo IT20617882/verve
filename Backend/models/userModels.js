@@ -58,6 +58,7 @@ userSchema.pre("save", async function (next) {
 
 //decrypt the password 
 //compare the entered p/w and database p/w
+//this.p/w from database 
 userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };

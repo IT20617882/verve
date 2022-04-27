@@ -80,9 +80,7 @@ const postDetails = (pics) => {
 
  return (
    <MainScreen tittle="Let's Get Started!">
-     <div className="top"  >
-
-
+     <div className="top">
        <Card style={{ paddingtop: 0 }}>
          <div className="loginContainer">
            {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
@@ -135,7 +133,7 @@ const postDetails = (pics) => {
                </Form.Group>
 
                <Form.Group controlId="formBasicPhone">
-                 <Form.Label>Phone No</Form.Label>
+                 <Form.Label pattern="[0]{1}[0-9]{9}">Phone No</Form.Label>
                  <Form.Control
                    className="line"
                    type="text"

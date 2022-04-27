@@ -9,6 +9,7 @@ const generateToken = require("../utils/generateToken");
 //@route           POST /api/users/
 //@access          Public
 const registerUser = asyncHandler(async (req, res) => {
+  //taking below feilds from user and checking
   const { name, email, password, phone,pic } = req.body;
   const userExist = await User.findOne({ email });
 
@@ -59,7 +60,9 @@ const authUser = asyncHandler(async (req, res) => {
        pic: user.pic,
        token: generateToken(user._id),
      });
-   } else {
+   } 
+   //if user not found
+   else {
      res.status(401);
      throw new Error("Invalid Email or Password");
    }

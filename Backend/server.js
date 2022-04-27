@@ -18,6 +18,8 @@ app.use(express.json());
 app.use('/api/users',userRoutes);
 app.use('/api/orders',orderRoutes);
 //app.use('/user', user);
+
+//call the error middleware
 app.use(notFound);
 app.use(errorHandler);
 
